@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      /*add a font-style: here
+      */;
+      font-style: garamond;
+      text-align: center;
+      background: url('http://biciblomquist.kissr.com/pics/leif_pic.png');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      background-size: 10px;
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      h2 {font-size: 16px;
+          padding: 5px;
+        }
+    }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://biciblomquist.kissr.com/pics/leif_steph_in_ohio2.jpg">
+    <h1>Bici Bits</h1>
+    <h2>Bite-sized bits of blogging brought to you by       
+      <li><a href="https://twitter.com/BiciBlomquist">@BiciBlomquist</a></li>
+    </h2>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Contact Me</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Blog Post Article</h2>
+    <p>Here's where the article goes.</p>
+    <button>Like</button>
+    <button>Tag this article</button>
+    <button>Comment on this post</button>
+  </article>
+  <article>
+    <h2>Blog Post Article</h2>
+    <p>Here's where the article goes.</p>
+    <button>Like</button>
+    <button>Tag this article</button>
+    <button>Comment on this post</button>
+  </article>
+  <article>
+    <h2>Blog Post Article</h2>
+    <p>Here's where the article goes.</p>
+    <button>Like</button>
+    <button>Tag this article</button>
+    <button>Comment on this post</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
